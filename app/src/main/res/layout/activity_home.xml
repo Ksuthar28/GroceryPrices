@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/filterView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dp_10">
+
+                <RelativeLayout
+                    android:id="@+id/searchDistrictView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/border_background"
+                    android:padding="@dimen/dp_2">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchDistrict"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:inputType="textCapWords"
+                        android:submitBackground="@color/white"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@color/white"
+                        app:queryHint="@string/district_hint" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/searchMarketView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchDistrictView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/border_background"
+                    android:padding="@dimen/dp_2">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/searchMarket"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/white"
+                        android:backgroundTint="@color/white"
+                        android:inputType="textCapWords"
+                        android:submitBackground="@color/white"
+                        app:iconifiedByDefault="false"
+                        app:queryBackground="@color/white"
+                        app:queryHint="@string/market_hint" />
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/buttonSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/searchMarketView"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="@string/search" />
+
+                <RadioGroup
+                    android:id="@+id/sortRadioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/buttonSearch"
+                    android:checkedButton="@id/radioPrice"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sort_by" />
+
+                    <RadioButton
+                        android:id="@+id/radioPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price" />
+
+                    <RadioButton
+                        android:id="@+id/radioDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/date" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/filterView"
+                android:clipToPadding="false"
+                android:padding="@dimen/dp_10"
+                tools:listitem="@layout/item_market" />
+
+            <TextView
+                android:id="@+id/empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:padding="@dimen/dp_10"
+                android:text="@string/result_not_available"
+                android:textSize="@dimen/sp_14"
+                android:visibility="visible" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+</layout>

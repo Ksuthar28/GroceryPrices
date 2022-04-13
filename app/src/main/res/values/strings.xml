@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Market Prices</string>
+    <string name="search_hint">Search by District or Market</string>
+    <string name="district_hint">Enter District Name</string>
+    <string name="market_hint">Enter Market or Mandi Name</string>
+    <string name="search">Search</string>
+    <string name="market_image">Market Image</string>
+    <string name="amount">\u20B9</string>
+    <string name="result_not_available">Result not found!</string>
+    <string name="internet_not_connected">Please check network connectivity and retry</string>
+    <string name="search_error">Please enter district or market name</string>
+    <string name="date">Date</string>
+    <string name="price">Price</string>
+    <string name="sort_by">Sort by:</string>
+</resources>

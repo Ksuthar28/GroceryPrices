@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/Android Projects/MandiPrices/app/src/main/res/layout/item_restaurant.xml" value="0.25" />
+        <entry key="..\:/Android/Android Projects/MarketpPrices/app/src/main/res/drawable/border_background.xml" value="0.2265" />
+        <entry key="..\:/Android/Android Projects/MarketpPrices/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Android/Android Projects/MarketpPrices/app/src/main/res/layout/home_fragment.xml" value="0.25" />
+        <entry key="..\:/Android/Android Projects/MarketpPrices/app/src/main/res/layout/item_market.xml" value="0.10989583333333333" />
+        <entry key="..\:/Android/Android Projects/MarketpPrices/app/src/main/res/layout/item_restaurant.xml" value="0.37720111214087115" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
